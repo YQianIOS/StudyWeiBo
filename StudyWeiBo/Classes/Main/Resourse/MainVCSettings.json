@@ -1,0 +1,32 @@
+ [
+  {
+  "vcName": "YQHomeViewController",
+  "title": "首页",
+  "imageName": "tabbar_home",
+  "selectImageStr": "tabbar_home_highlighted"
+  },
+  {
+  "vcName": "YQMessageViewController",
+  "title": "消息",
+  "imageName": "tabbar_message_center",
+   "selectImageStr": "tabbar_message_center_highlighted"
+  },
+  {
+  "vcName": "YQNullTextViewController",
+  "title": "",
+  "imageName": "",
+   "selectImageStr": ""
+  },
+  {
+  "vcName": "YQDiscoverViewController",
+  "title": "发现",
+  "imageName": "tabbar_discover",
+   "selectImageStr": "tabbar_discover_highlighted"
+  },
+  {
+  "vcName": "YQProfileTableViewController",
+  "title": "我的",
+  "imageName": "tabbar_profile",
+   "selectImageStr": "tabbar_profile_highlighted"
+  }
+  ]

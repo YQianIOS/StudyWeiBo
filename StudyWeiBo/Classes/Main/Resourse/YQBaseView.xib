@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YQBaseView" customModule="StudyWeiBo" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YQBaseView" customModule="StudyWeiBo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="DcN-yn-Cz1">
+                    <rect key="frame" x="100" y="246" width="175" height="175"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="visitordiscover_feed_mask_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="SLN-Ww-Y2S">
+                    <rect key="frame" x="67" y="269" width="240" height="152"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_house" translatesAutoresizingMaskIntoConstraints="NO" id="Fa5-hv-xJ2">
+                    <rect key="frame" x="140.5" y="288.5" width="94" height="90"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.92934995889663696" green="0.92945772409439087" blue="0.92930155992507935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DcN-yn-Cz1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DZ7-Ti-4zA"/>
+                <constraint firstItem="Fa5-hv-xJ2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="T4p-SS-KTN"/>
+                <constraint firstItem="DcN-yn-Cz1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Tf0-Yl-5wP"/>
+                <constraint firstItem="Fa5-hv-xJ2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Xzc-FR-GAH"/>
+            </constraints>
+            <connections>
+                <outlet property="visitorImageView" destination="DcN-yn-Cz1" id="fPZ-q3-O9T"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="visitordiscover_feed_image_house" width="94" height="90"/>
+        <image name="visitordiscover_feed_image_smallicon" width="175" height="175"/>
+        <image name="visitordiscover_feed_mask_smallicon" width="175" height="175"/>
+    </resources>
+</document>

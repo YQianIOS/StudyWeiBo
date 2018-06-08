@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B33346681FB99D9700BD5739 /* YQMyQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33346671FB99D9700BD5739 /* YQMyQRCodeViewController.swift */; };
+		B333466C1FBAC38D00BD5739 /* YQOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333466A1FBAC38D00BD5739 /* YQOAuthViewController.swift */; };
+		B333466D1FBAC38D00BD5739 /* YQOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B333466B1FBAC38D00BD5739 /* YQOAuthViewController.xib */; };
+		B333466F1FBAD00200BD5739 /* YQNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333466E1FBAD00200BD5739 /* YQNetworkTools.swift */; };
+		B33346711FBADC1400BD5739 /* YQUserAccountModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33346701FBADC1400BD5739 /* YQUserAccountModal.swift */; };
+		B33346731FBBD47200BD5739 /* String-extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33346721FBBD47200BD5739 /* String-extention.swift */; };
+		B33346771FBD2C6C00BD5739 /* NewFeature.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33346761FBD2C6C00BD5739 /* NewFeature.storyboard */; };
+		B33346791FBD2DB500BD5739 /* YQNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33346781FBD2DB500BD5739 /* YQNewFeatureViewController.swift */; };
+		B333467B1FBD3C8E00BD5739 /* YQWelcomBeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333467A1FBD3C8E00BD5739 /* YQWelcomBeginViewController.swift */; };
+		B333467D1FBD3CA600BD5739 /* WelcomBegin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B333467C1FBD3CA600BD5739 /* WelcomBegin.storyboard */; };
+		B34116D01FCC339B00A3D9A0 /* Button-extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34116CF1FCC339B00A3D9A0 /* Button-extention.swift */; };
+		B34116D21FCD159800A3D9A0 /* YQStatusModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34116D11FCD159800A3D9A0 /* YQStatusModal.swift */; };
+		B34116D41FCD3B5E00A3D9A0 /* YQUserModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34116D31FCD3B5E00A3D9A0 /* YQUserModal.swift */; };
+		B34116D71FCD40B100A3D9A0 /* YQHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34116D51FCD40B100A3D9A0 /* YQHomeTableViewCell.swift */; };
+		B34116D81FCD40B100A3D9A0 /* YQHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B34116D61FCD40B100A3D9A0 /* YQHomeTableViewCell.xib */; };
+		B34116DA1FCECCF800A3D9A0 /* Date-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34116D91FCECCF400A3D9A0 /* Date-extension.swift */; };
+		B34116DD1FD1067700A3D9A0 /* YQHomeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34116DC1FD1067700A3D9A0 /* YQHomeViewModal.swift */; };
+		B37B41D01FB4452000C03A9C /* YQPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37B41CE1FB4452000C03A9C /* YQPopoverViewController.swift */; };
+		B37B41D11FB4452000C03A9C /* YQPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37B41CF1FB4452000C03A9C /* YQPopoverViewController.xib */; };
+		B37B41D31FB44EF900C03A9C /* YQPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37B41D21FB44EF900C03A9C /* YQPresentationController.swift */; };
+		B37B41D51FB47F7D00C03A9C /* YQPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37B41D41FB47F7D00C03A9C /* YQPresentationManager.swift */; };
+		B37B41D91FB5581600C03A9C /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37B41D81FB5581600C03A9C /* QRCode.storyboard */; };
+		B37B41DB1FB5794400C03A9C /* YQQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37B41DA1FB5794400C03A9C /* YQQRCodeViewController.swift */; };
+		B38507271FE105DE00B624BC /* YQForwardingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38507251FE105DE00B624BC /* YQForwardingTableViewCell.swift */; };
+		B38507281FE105DE00B624BC /* YQForwardingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38507261FE105DE00B624BC /* YQForwardingTableViewCell.xib */; };
+		B385072A1FE1062C00B624BC /* YQHomeBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38507291FE1062C00B624BC /* YQHomeBasicTableViewCell.swift */; };
+		B385072D1FE21A1800B624BC /* RefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B385072C1FE21A1800B624BC /* RefreshView.xib */; };
+		B385072F1FE21DB600B624BC /* YQRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B385072E1FE21DB600B624BC /* YQRefreshView.swift */; };
+		B392439A20CA72680069E156 /* YQHomeListViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392439920CA72680069E156 /* YQHomeListViewModal.swift */; };
+		B3B020651FE8B0CD00853E76 /* YQBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B020641FE8B0CD00853E76 /* YQBrowserViewController.swift */; };
+		B3B811E81FA96CDD006F9057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B811E71FA96CDD006F9057 /* AppDelegate.swift */; };
+		B3B811EF1FA96CDD006F9057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B811EE1FA96CDD006F9057 /* Assets.xcassets */; };
+		B3B811F21FA96CDD006F9057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B811F01FA96CDD006F9057 /* LaunchScreen.storyboard */; };
+		B3B8121A1FAAF3DC006F9057 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B812191FAAF3DC006F9057 /* MainViewController.swift */; };
+		B3B812361FAB04A3006F9057 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B812351FAB04A3006F9057 /* Const.swift */; };
+		B3B8123A1FAB3C71006F9057 /* NSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B812391FAB3C71006F9057 /* NSLog.swift */; };
+		B3EA1C881FAFFEF700743A78 /* YQNullTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1C871FAFFEF700743A78 /* YQNullTextViewController.swift */; };
+		B3EA1C9D1FB0029600743A78 /* YQDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1C8B1FB0029600743A78 /* YQDiscoverViewController.swift */; };
+		B3EA1C9E1FB0029600743A78 /* YQHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1C901FB0029600743A78 /* YQHomeViewController.swift */; };
+		B3EA1C9F1FB0029600743A78 /* YQMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1C951FB0029600743A78 /* YQMessageViewController.swift */; };
+		B3EA1CA01FB0029600743A78 /* YQProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1C9A1FB0029600743A78 /* YQProfileTableViewController.swift */; };
+		B3EA1CA31FB002CE00743A78 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = B3EA1CA21FB002CE00743A78 /* MainVCSettings.json */; };
+		B3EA1CA71FB064E900743A78 /* YQHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EA1CA61FB064E900743A78 /* YQHomeViewController.xib */; };
+		B3EA1CAA1FB0661300743A78 /* YQNullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1CA81FB0661300743A78 /* YQNullTableViewController.swift */; };
+		B3EA1CAB1FB0661300743A78 /* YQNullTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EA1CA91FB0661300743A78 /* YQNullTableViewController.xib */; };
+		B3EA1CAD1FB0676700743A78 /* YQMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EA1CAC1FB0676700743A78 /* YQMessageViewController.xib */; };
+		B3EA1CAF1FB0681D00743A78 /* YQProfileTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EA1CAE1FB0681D00743A78 /* YQProfileTableViewController.xib */; };
+		B3EA1CB21FB0696D00743A78 /* YQBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1CB01FB0696D00743A78 /* YQBaseTableViewController.swift */; };
+		B3EA1CB51FB06B2B00743A78 /* YQBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1CB41FB06B2B00743A78 /* YQBaseView.swift */; };
+		B3EA1CB71FB06B3600743A78 /* YQBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EA1CB61FB06B3600743A78 /* YQBaseView.xib */; };
+		B3EA1CBA1FB1529A00743A78 /* YQUIBarButtonItem-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1CB91FB1529A00743A78 /* YQUIBarButtonItem-extension.swift */; };
+		B3EA1CBC1FB15CE200743A78 /* YQTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1CBB1FB15CE200743A78 /* YQTitleButton.swift */; };
+		D4281125A7018392B25B4DA8 /* Pods_StudyWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A01DF1FE032FB07D849023A /* Pods_StudyWeiBo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A01DF1FE032FB07D849023A /* Pods_StudyWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9611C755CBD9E40CA15B41C2 /* Pods-StudyWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyWeiBo/Pods-StudyWeiBo.release.xcconfig"; sourceTree = "<group>"; };
+		B33346671FB99D9700BD5739 /* YQMyQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQMyQRCodeViewController.swift; sourceTree = "<group>"; };
+		B333466A1FBAC38D00BD5739 /* YQOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQOAuthViewController.swift; sourceTree = "<group>"; };
+		B333466B1FBAC38D00BD5739 /* YQOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQOAuthViewController.xib; sourceTree = "<group>"; };
+		B333466E1FBAD00200BD5739 /* YQNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQNetworkTools.swift; sourceTree = "<group>"; };
+		B33346701FBADC1400BD5739 /* YQUserAccountModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQUserAccountModal.swift; sourceTree = "<group>"; };
+		B33346721FBBD47200BD5739 /* String-extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-extention.swift"; sourceTree = "<group>"; };
+		B33346761FBD2C6C00BD5739 /* NewFeature.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewFeature.storyboard; sourceTree = "<group>"; };
+		B33346781FBD2DB500BD5739 /* YQNewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQNewFeatureViewController.swift; sourceTree = "<group>"; };
+		B333467A1FBD3C8E00BD5739 /* YQWelcomBeginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQWelcomBeginViewController.swift; sourceTree = "<group>"; };
+		B333467C1FBD3CA600BD5739 /* WelcomBegin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomBegin.storyboard; sourceTree = "<group>"; };
+		B34116CF1FCC339B00A3D9A0 /* Button-extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button-extention.swift"; sourceTree = "<group>"; };
+		B34116D11FCD159800A3D9A0 /* YQStatusModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQStatusModal.swift; sourceTree = "<group>"; };
+		B34116D31FCD3B5E00A3D9A0 /* YQUserModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQUserModal.swift; sourceTree = "<group>"; };
+		B34116D51FCD40B100A3D9A0 /* YQHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQHomeTableViewCell.swift; sourceTree = "<group>"; };
+		B34116D61FCD40B100A3D9A0 /* YQHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQHomeTableViewCell.xib; sourceTree = "<group>"; };
+		B34116D91FCECCF400A3D9A0 /* Date-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-extension.swift"; sourceTree = "<group>"; };
+		B34116DC1FD1067700A3D9A0 /* YQHomeViewModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQHomeViewModal.swift; sourceTree = "<group>"; };
+		B37B41CE1FB4452000C03A9C /* YQPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQPopoverViewController.swift; sourceTree = "<group>"; };
+		B37B41CF1FB4452000C03A9C /* YQPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQPopoverViewController.xib; sourceTree = "<group>"; };
+		B37B41D21FB44EF900C03A9C /* YQPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQPresentationController.swift; sourceTree = "<group>"; };
+		B37B41D41FB47F7D00C03A9C /* YQPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQPresentationManager.swift; sourceTree = "<group>"; };
+		B37B41D81FB5581600C03A9C /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
+		B37B41DA1FB5794400C03A9C /* YQQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQQRCodeViewController.swift; sourceTree = "<group>"; };
+		B38507251FE105DE00B624BC /* YQForwardingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQForwardingTableViewCell.swift; sourceTree = "<group>"; };
+		B38507261FE105DE00B624BC /* YQForwardingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQForwardingTableViewCell.xib; sourceTree = "<group>"; };
+		B38507291FE1062C00B624BC /* YQHomeBasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQHomeBasicTableViewCell.swift; sourceTree = "<group>"; };
+		B385072C1FE21A1800B624BC /* RefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshView.xib; sourceTree = "<group>"; };
+		B385072E1FE21DB600B624BC /* YQRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQRefreshView.swift; sourceTree = "<group>"; };
+		B392439920CA72680069E156 /* YQHomeListViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQHomeListViewModal.swift; sourceTree = "<group>"; };
+		B3B020641FE8B0CD00853E76 /* YQBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQBrowserViewController.swift; sourceTree = "<group>"; };
+		B3B811E41FA96CDD006F9057 /* StudyWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B811E71FA96CDD006F9057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3B811EE1FA96CDD006F9057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3B811F11FA96CDD006F9057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3B811F31FA96CDD006F9057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3B812191FAAF3DC006F9057 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B3B812351FAB04A3006F9057 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		B3B812391FAB3C71006F9057 /* NSLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLog.swift; sourceTree = "<group>"; };
+		B3EA1C871FAFFEF700743A78 /* YQNullTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YQNullTextViewController.swift; path = ../YQNullTextViewController.swift; sourceTree = "<group>"; };
+		B3EA1C8B1FB0029600743A78 /* YQDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDiscoverViewController.swift; sourceTree = "<group>"; };
+		B3EA1C901FB0029600743A78 /* YQHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQHomeViewController.swift; sourceTree = "<group>"; };
+		B3EA1C951FB0029600743A78 /* YQMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQMessageViewController.swift; sourceTree = "<group>"; };
+		B3EA1C9A1FB0029600743A78 /* YQProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQProfileTableViewController.swift; sourceTree = "<group>"; };
+		B3EA1CA21FB002CE00743A78 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		B3EA1CA61FB064E900743A78 /* YQHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQHomeViewController.xib; sourceTree = "<group>"; };
+		B3EA1CA81FB0661300743A78 /* YQNullTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQNullTableViewController.swift; sourceTree = "<group>"; };
+		B3EA1CA91FB0661300743A78 /* YQNullTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQNullTableViewController.xib; sourceTree = "<group>"; };
+		B3EA1CAC1FB0676700743A78 /* YQMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQMessageViewController.xib; sourceTree = "<group>"; };
+		B3EA1CAE1FB0681D00743A78 /* YQProfileTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQProfileTableViewController.xib; sourceTree = "<group>"; };
+		B3EA1CB01FB0696D00743A78 /* YQBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQBaseTableViewController.swift; sourceTree = "<group>"; };
+		B3EA1CB41FB06B2B00743A78 /* YQBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQBaseView.swift; sourceTree = "<group>"; };
+		B3EA1CB61FB06B3600743A78 /* YQBaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQBaseView.xib; sourceTree = "<group>"; };
+		B3EA1CB91FB1529A00743A78 /* YQUIBarButtonItem-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YQUIBarButtonItem-extension.swift"; sourceTree = "<group>"; };
+		B3EA1CBB1FB15CE200743A78 /* YQTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQTitleButton.swift; sourceTree = "<group>"; };
+		F189B15359024DFFD73B7441 /* Pods-StudyWeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyWeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyWeiBo/Pods-StudyWeiBo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3B811E11FA96CDD006F9057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4281125A7018392B25B4DA8 /* Pods_StudyWeiBo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05CD191A31AEA0B75EE1CCAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A01DF1FE032FB07D849023A /* Pods_StudyWeiBo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B33346691FBABD2100BD5739 /* OAuth授权 */ = {
+			isa = PBXGroup;
+			children = (
+				B333466A1FBAC38D00BD5739 /* YQOAuthViewController.swift */,
+				B333466B1FBAC38D00BD5739 /* YQOAuthViewController.xib */,
+				B33346701FBADC1400BD5739 /* YQUserAccountModal.swift */,
+			);
+			path = "OAuth授权";
+			sourceTree = "<group>";
+		};
+		B33346751FBD2C3E00BD5739 /* NewFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				B33346781FBD2DB500BD5739 /* YQNewFeatureViewController.swift */,
+				B33346761FBD2C6C00BD5739 /* NewFeature.storyboard */,
+				B333467A1FBD3C8E00BD5739 /* YQWelcomBeginViewController.swift */,
+				B333467C1FBD3CA600BD5739 /* WelcomBegin.storyboard */,
+			);
+			path = "NewFeature(新特性)";
+			sourceTree = "<group>";
+		};
+		B34116DB1FD1064E00A3D9A0 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				B34116DC1FD1067700A3D9A0 /* YQHomeViewModal.swift */,
+				B392439920CA72680069E156 /* YQHomeListViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		B37B41D61FB480F100C03A9C /* PopoverManager */ = {
+			isa = PBXGroup;
+			children = (
+				B37B41D21FB44EF900C03A9C /* YQPresentationController.swift */,
+				B37B41D41FB47F7D00C03A9C /* YQPresentationManager.swift */,
+			);
+			name = PopoverManager;
+			sourceTree = "<group>";
+		};
+		B37B41D71FB557DD00C03A9C /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				B37B41D81FB5581600C03A9C /* QRCode.storyboard */,
+				B37B41DA1FB5794400C03A9C /* YQQRCodeViewController.swift */,
+				B33346671FB99D9700BD5739 /* YQMyQRCodeViewController.swift */,
+			);
+			name = QRCode;
+			sourceTree = "<group>";
+		};
+		B3B020631FE8B09E00853E76 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				B3B020641FE8B0CD00853E76 /* YQBrowserViewController.swift */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		B3B811DB1FA96CDD006F9057 = {
+			isa = PBXGroup;
+			children = (
+				B3B811E61FA96CDD006F9057 /* StudyWeiBo */,
+				B3B811E51FA96CDD006F9057 /* Products */,
+				B79A62DC693CC5F51F750A6B /* Pods */,
+				05CD191A31AEA0B75EE1CCAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3B811E51FA96CDD006F9057 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3B811E41FA96CDD006F9057 /* StudyWeiBo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3B811E61FA96CDD006F9057 /* StudyWeiBo */ = {
+			isa = PBXGroup;
+			children = (
+				B3B811E71FA96CDD006F9057 /* AppDelegate.swift */,
+				B3B812161FAAF00D006F9057 /* Classes */,
+				B3B811EE1FA96CDD006F9057 /* Assets.xcassets */,
+				B3B811F01FA96CDD006F9057 /* LaunchScreen.storyboard */,
+				B3B811F31FA96CDD006F9057 /* Info.plist */,
+			);
+			path = StudyWeiBo;
+			sourceTree = "<group>";
+		};
+		B3B812161FAAF00D006F9057 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B33346751FBD2C3E00BD5739 /* NewFeature(新特性) */,
+				B33346691FBABD2100BD5739 /* OAuth授权 */,
+				B3B812171FAAF00D006F9057 /* Main */,
+				B3EA1C891FB0029600743A78 /* Discover */,
+				B3EA1C8E1FB0029600743A78 /* Home */,
+				B3EA1C931FB0029600743A78 /* Message */,
+				B3EA1C981FB0029600743A78 /* Profile */,
+				B3B812181FAAF00D006F9057 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B3B812171FAAF00D006F9057 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1CA11FB002BC00743A78 /* Resourse */,
+				B3B812191FAAF3DC006F9057 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B3B812181FAAF00D006F9057 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1CB81FB1526000743A78 /* externtion */,
+				B3B812351FAB04A3006F9057 /* Const.swift */,
+				B3B812391FAB3C71006F9057 /* NSLog.swift */,
+				B333466E1FBAD00200BD5739 /* YQNetworkTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B3EA1C891FB0029600743A78 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1C8A1FB0029600743A78 /* Controller */,
+				B3EA1C8C1FB0029600743A78 /* Modal */,
+				B3EA1C8D1FB0029600743A78 /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B3EA1C8A1FB0029600743A78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1C8B1FB0029600743A78 /* YQDiscoverViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3EA1C8C1FB0029600743A78 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		B3EA1C8D1FB0029600743A78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3EA1C8E1FB0029600743A78 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B3B020631FE8B09E00853E76 /* Browser */,
+				B3EA1C8F1FB0029600743A78 /* Controller */,
+				B3EA1C911FB0029600743A78 /* Modal */,
+				B34116DB1FD1064E00A3D9A0 /* ViewModal */,
+				B3EA1C921FB0029600743A78 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B3EA1C8F1FB0029600743A78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1C901FB0029600743A78 /* YQHomeViewController.swift */,
+				B3EA1CA61FB064E900743A78 /* YQHomeViewController.xib */,
+				B37B41CE1FB4452000C03A9C /* YQPopoverViewController.swift */,
+				B37B41CF1FB4452000C03A9C /* YQPopoverViewController.xib */,
+				B37B41D61FB480F100C03A9C /* PopoverManager */,
+				B37B41D71FB557DD00C03A9C /* QRCode */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3EA1C911FB0029600743A78 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				B34116D11FCD159800A3D9A0 /* YQStatusModal.swift */,
+				B34116D31FCD3B5E00A3D9A0 /* YQUserModal.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		B3EA1C921FB0029600743A78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1CBB1FB15CE200743A78 /* YQTitleButton.swift */,
+				B38507291FE1062C00B624BC /* YQHomeBasicTableViewCell.swift */,
+				B34116D51FCD40B100A3D9A0 /* YQHomeTableViewCell.swift */,
+				B34116D61FCD40B100A3D9A0 /* YQHomeTableViewCell.xib */,
+				B38507251FE105DE00B624BC /* YQForwardingTableViewCell.swift */,
+				B38507261FE105DE00B624BC /* YQForwardingTableViewCell.xib */,
+				B385072E1FE21DB600B624BC /* YQRefreshView.swift */,
+				B385072C1FE21A1800B624BC /* RefreshView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3EA1C931FB0029600743A78 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1C941FB0029600743A78 /* Controller */,
+				B3EA1C961FB0029600743A78 /* Modal */,
+				B3EA1C971FB0029600743A78 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		B3EA1C941FB0029600743A78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1C951FB0029600743A78 /* YQMessageViewController.swift */,
+				B3EA1CAC1FB0676700743A78 /* YQMessageViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3EA1C961FB0029600743A78 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		B3EA1C971FB0029600743A78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3EA1C981FB0029600743A78 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1C991FB0029600743A78 /* Controller */,
+				B3EA1C9B1FB0029600743A78 /* Modal */,
+				B3EA1C9C1FB0029600743A78 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B3EA1C991FB0029600743A78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1C9A1FB0029600743A78 /* YQProfileTableViewController.swift */,
+				B3EA1CAE1FB0681D00743A78 /* YQProfileTableViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3EA1C9B1FB0029600743A78 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		B3EA1C9C1FB0029600743A78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3EA1CA11FB002BC00743A78 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1CA21FB002CE00743A78 /* MainVCSettings.json */,
+				B3EA1C871FAFFEF700743A78 /* YQNullTextViewController.swift */,
+				B3EA1CA81FB0661300743A78 /* YQNullTableViewController.swift */,
+				B3EA1CA91FB0661300743A78 /* YQNullTableViewController.xib */,
+				B3EA1CB01FB0696D00743A78 /* YQBaseTableViewController.swift */,
+				B3EA1CB41FB06B2B00743A78 /* YQBaseView.swift */,
+				B3EA1CB61FB06B3600743A78 /* YQBaseView.xib */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		B3EA1CB81FB1526000743A78 /* externtion */ = {
+			isa = PBXGroup;
+			children = (
+				B3EA1CB91FB1529A00743A78 /* YQUIBarButtonItem-extension.swift */,
+				B33346721FBBD47200BD5739 /* String-extention.swift */,
+				B34116CF1FCC339B00A3D9A0 /* Button-extention.swift */,
+				B34116D91FCECCF400A3D9A0 /* Date-extension.swift */,
+			);
+			path = externtion;
+			sourceTree = "<group>";
+		};
+		B79A62DC693CC5F51F750A6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F189B15359024DFFD73B7441 /* Pods-StudyWeiBo.debug.xcconfig */,
+				9611C755CBD9E40CA15B41C2 /* Pods-StudyWeiBo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3B811E31FA96CDD006F9057 /* StudyWeiBo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3B811F61FA96CDD006F9057 /* Build configuration list for PBXNativeTarget "StudyWeiBo" */;
+			buildPhases = (
+				6CFACE9283CE129B91F863B3 /* [CP] Check Pods Manifest.lock */,
+				B3B811E01FA96CDD006F9057 /* Sources */,
+				B3B811E11FA96CDD006F9057 /* Frameworks */,
+				B3B811E21FA96CDD006F9057 /* Resources */,
+				F25EF6F45B406F307044CC2C /* [CP] Embed Pods Frameworks */,
+				1C97C1C35FBDAFFA32C7C4D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyWeiBo;
+			productName = StudyWeiBo;
+			productReference = B3B811E41FA96CDD006F9057 /* StudyWeiBo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3B811DC1FA96CDD006F9057 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YQ;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = yizhiton;
+				TargetAttributes = {
+					B3B811E31FA96CDD006F9057 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VUDA85NREJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B3B811DF1FA96CDD006F9057 /* Build configuration list for PBXProject "StudyWeiBo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3B811DB1FA96CDD006F9057;
+			productRefGroup = B3B811E51FA96CDD006F9057 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3B811E31FA96CDD006F9057 /* StudyWeiBo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3B811E21FA96CDD006F9057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B811F21FA96CDD006F9057 /* LaunchScreen.storyboard in Resources */,
+				B3B811EF1FA96CDD006F9057 /* Assets.xcassets in Resources */,
+				B37B41D11FB4452000C03A9C /* YQPopoverViewController.xib in Resources */,
+				B3EA1CAF1FB0681D00743A78 /* YQProfileTableViewController.xib in Resources */,
+				B333466D1FBAC38D00BD5739 /* YQOAuthViewController.xib in Resources */,
+				B333467D1FBD3CA600BD5739 /* WelcomBegin.storyboard in Resources */,
+				B37B41D91FB5581600C03A9C /* QRCode.storyboard in Resources */,
+				B3EA1CAB1FB0661300743A78 /* YQNullTableViewController.xib in Resources */,
+				B38507281FE105DE00B624BC /* YQForwardingTableViewCell.xib in Resources */,
+				B34116D81FCD40B100A3D9A0 /* YQHomeTableViewCell.xib in Resources */,
+				B385072D1FE21A1800B624BC /* RefreshView.xib in Resources */,
+				B3EA1CA31FB002CE00743A78 /* MainVCSettings.json in Resources */,
+				B3EA1CAD1FB0676700743A78 /* YQMessageViewController.xib in Resources */,
+				B3EA1CA71FB064E900743A78 /* YQHomeViewController.xib in Resources */,
+				B33346771FBD2C6C00BD5739 /* NewFeature.storyboard in Resources */,
+				B3EA1CB71FB06B3600743A78 /* YQBaseView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C97C1C35FBDAFFA32C7C4D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyWeiBo/Pods-StudyWeiBo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CFACE9283CE129B91F863B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F25EF6F45B406F307044CC2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyWeiBo/Pods-StudyWeiBo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3B811E01FA96CDD006F9057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33346731FBBD47200BD5739 /* String-extention.swift in Sources */,
+				B333467B1FBD3C8E00BD5739 /* YQWelcomBeginViewController.swift in Sources */,
+				B34116D41FCD3B5E00A3D9A0 /* YQUserModal.swift in Sources */,
+				B3EA1CB21FB0696D00743A78 /* YQBaseTableViewController.swift in Sources */,
+				B385072F1FE21DB600B624BC /* YQRefreshView.swift in Sources */,
+				B3EA1CAA1FB0661300743A78 /* YQNullTableViewController.swift in Sources */,
+				B37B41D51FB47F7D00C03A9C /* YQPresentationManager.swift in Sources */,
+				B3B8123A1FAB3C71006F9057 /* NSLog.swift in Sources */,
+				B385072A1FE1062C00B624BC /* YQHomeBasicTableViewCell.swift in Sources */,
+				B333466C1FBAC38D00BD5739 /* YQOAuthViewController.swift in Sources */,
+				B37B41D31FB44EF900C03A9C /* YQPresentationController.swift in Sources */,
+				B3B811E81FA96CDD006F9057 /* AppDelegate.swift in Sources */,
+				B34116D21FCD159800A3D9A0 /* YQStatusModal.swift in Sources */,
+				B34116DA1FCECCF800A3D9A0 /* Date-extension.swift in Sources */,
+				B3EA1C9F1FB0029600743A78 /* YQMessageViewController.swift in Sources */,
+				B34116D01FCC339B00A3D9A0 /* Button-extention.swift in Sources */,
+				B33346711FBADC1400BD5739 /* YQUserAccountModal.swift in Sources */,
+				B3EA1C9D1FB0029600743A78 /* YQDiscoverViewController.swift in Sources */,
+				B3EA1CBC1FB15CE200743A78 /* YQTitleButton.swift in Sources */,
+				B333466F1FBAD00200BD5739 /* YQNetworkTools.swift in Sources */,
+				B34116D71FCD40B100A3D9A0 /* YQHomeTableViewCell.swift in Sources */,
+				B3EA1CA01FB0029600743A78 /* YQProfileTableViewController.swift in Sources */,
+				B37B41D01FB4452000C03A9C /* YQPopoverViewController.swift in Sources */,
+				B392439A20CA72680069E156 /* YQHomeListViewModal.swift in Sources */,
+				B3EA1CBA1FB1529A00743A78 /* YQUIBarButtonItem-extension.swift in Sources */,
+				B3B8121A1FAAF3DC006F9057 /* MainViewController.swift in Sources */,
+				B3EA1C881FAFFEF700743A78 /* YQNullTextViewController.swift in Sources */,
+				B37B41DB1FB5794400C03A9C /* YQQRCodeViewController.swift in Sources */,
+				B34116DD1FD1067700A3D9A0 /* YQHomeViewModal.swift in Sources */,
+				B38507271FE105DE00B624BC /* YQForwardingTableViewCell.swift in Sources */,
+				B3B020651FE8B0CD00853E76 /* YQBrowserViewController.swift in Sources */,
+				B33346681FB99D9700BD5739 /* YQMyQRCodeViewController.swift in Sources */,
+				B33346791FBD2DB500BD5739 /* YQNewFeatureViewController.swift in Sources */,
+				B3B812361FAB04A3006F9057 /* Const.swift in Sources */,
+				B3EA1C9E1FB0029600743A78 /* YQHomeViewController.swift in Sources */,
+				B3EA1CB51FB06B2B00743A78 /* YQBaseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3B811F01FA96CDD006F9057 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3B811F11FA96CDD006F9057 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3B811F41FA96CDD006F9057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3B811F51FA96CDD006F9057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3B811F71FA96CDD006F9057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F189B15359024DFFD73B7441 /* Pods-StudyWeiBo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = VUDA85NREJ;
+				INFOPLIST_FILE = StudyWeiBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yizhiton.StudyWeiBo;
+				PRODUCT_NAME = StudyWeiBo;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG ";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B3B811F81FA96CDD006F9057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9611C755CBD9E40CA15B41C2 /* Pods-StudyWeiBo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = VUDA85NREJ;
+				INFOPLIST_FILE = StudyWeiBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yizhiton.StudyWeiBo;
+				PRODUCT_NAME = StudyWeiBo;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3B811DF1FA96CDD006F9057 /* Build configuration list for PBXProject "StudyWeiBo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B811F41FA96CDD006F9057 /* Debug */,
+				B3B811F51FA96CDD006F9057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3B811F61FA96CDD006F9057 /* Build configuration list for PBXNativeTarget "StudyWeiBo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3B811F71FA96CDD006F9057 /* Debug */,
+				B3B811F81FA96CDD006F9057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3B811DC1FA96CDD006F9057 /* Project object */;
+}
