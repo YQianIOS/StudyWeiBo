@@ -36,6 +36,7 @@
 		B385072D1FE21A1800B624BC /* RefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B385072C1FE21A1800B624BC /* RefreshView.xib */; };
 		B385072F1FE21DB600B624BC /* YQRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B385072E1FE21DB600B624BC /* YQRefreshView.swift */; };
 		B392439A20CA72680069E156 /* YQHomeListViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392439920CA72680069E156 /* YQHomeListViewModal.swift */; };
+		B392439E20CBA3C70069E156 /* YQPictureShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392439D20CBA3C70069E156 /* YQPictureShowViewController.swift */; };
 		B3B020651FE8B0CD00853E76 /* YQBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B020641FE8B0CD00853E76 /* YQBrowserViewController.swift */; };
 		B3B811E81FA96CDD006F9057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B811E71FA96CDD006F9057 /* AppDelegate.swift */; };
 		B3B811EF1FA96CDD006F9057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B811EE1FA96CDD006F9057 /* Assets.xcassets */; };
@@ -94,6 +95,7 @@
 		B385072C1FE21A1800B624BC /* RefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshView.xib; sourceTree = "<group>"; };
 		B385072E1FE21DB600B624BC /* YQRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQRefreshView.swift; sourceTree = "<group>"; };
 		B392439920CA72680069E156 /* YQHomeListViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQHomeListViewModal.swift; sourceTree = "<group>"; };
+		B392439D20CBA3C70069E156 /* YQPictureShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQPictureShowViewController.swift; sourceTree = "<group>"; };
 		B3B020641FE8B0CD00853E76 /* YQBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQBrowserViewController.swift; sourceTree = "<group>"; };
 		B3B811E41FA96CDD006F9057 /* StudyWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B811E71FA96CDD006F9057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				B3EA1CA61FB064E900743A78 /* YQHomeViewController.xib */,
 				B37B41CE1FB4452000C03A9C /* YQPopoverViewController.swift */,
 				B37B41CF1FB4452000C03A9C /* YQPopoverViewController.xib */,
+				B392439D20CBA3C70069E156 /* YQPictureShowViewController.swift */,
 				B37B41D61FB480F100C03A9C /* PopoverManager */,
 				B37B41D71FB557DD00C03A9C /* QRCode */,
 			);
@@ -617,6 +620,7 @@
 				B33346681FB99D9700BD5739 /* YQMyQRCodeViewController.swift in Sources */,
 				B33346791FBD2DB500BD5739 /* YQNewFeatureViewController.swift in Sources */,
 				B3B812361FAB04A3006F9057 /* Const.swift in Sources */,
+				B392439E20CBA3C70069E156 /* YQPictureShowViewController.swift in Sources */,
 				B3EA1C9E1FB0029600743A78 /* YQHomeViewController.swift in Sources */,
 				B3EA1CB51FB06B2B00743A78 /* YQBaseView.swift in Sources */,
 			);

@@ -187,6 +187,7 @@ extension YQHomeViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: kHomeTableViewCell) as! YQHomeTableViewCell
         
         cell.homeViewModal = homeListVM.statusArr[indexPath.item]
+        cell.delegate = self
         
         // 取消cell的选中状态
         cell.selectionStyle = UITableViewCellSelectionStyle.none
@@ -207,6 +208,13 @@ extension YQHomeViewController {
         }
     }
 
+}
+
+extension YQHomeViewController: YQHomeBasicTableViewCellDelegate {
+    func homeBasicTableViewCell(_ view: YQHomeBasicTableViewCell, pictureUrl: [URL]?, indexPath: IndexPath) {
+        let pictureShowVC = YQPictureShowViewController(bmiddle_pic: pictureUrl, indexPath: indexPath)
+        present(pictureShowVC, animated: true, completion: nil)
+    }
 }
 
 

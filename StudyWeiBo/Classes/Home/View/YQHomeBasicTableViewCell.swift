@@ -9,6 +9,10 @@
 import UIKit
 import SDWebImage
 
+protocol YQHomeBasicTableViewCellDelegate: class {
+    func homeBasicTableViewCell(_ view: YQHomeBasicTableViewCell, pictureUrl: [URL]?, indexPath: IndexPath)
+}
+
 private let kPictureCollectionViewCell : String = "kPictureCollectionViewCell"
 
 private let kItemMargin : CGFloat = 10
@@ -41,6 +45,7 @@ class YQHomeBasicTableViewCell: UITableViewCell {
     
     @IBOutlet weak var contentLabel: UILabel!
     
+    weak var delegate: YQHomeBasicTableViewCellDelegate?
     
     var homeViewModal : YQHomeViewModal? {
         didSet {
@@ -135,12 +140,6 @@ class YQHomeBasicTableViewCell: UITableViewCell {
         pictureCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kPictureCollectionViewCell)
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
 
 // MARK: -- UICollectionViewDataSource 协议方法
@@ -165,6 +164,6 @@ extension YQHomeBasicTableViewCell: UICollectionViewDataSource {
 // MARK: -- UICollectionViewDelegate 协议方法
 extension YQHomeBasicTableViewCell : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        delegate?.homeBasicTableViewCell(self, pictureUrl: homeViewModal?.bmiddle_pic, indexPath: indexPath)
     }
 }
