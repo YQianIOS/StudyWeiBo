@@ -484,7 +484,7 @@
 				TargetAttributes = {
 					B3B811E31FA96CDD006F9057 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = VUDA85NREJ;
+						DevelopmentTeam = 648N73SCMH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -741,7 +741,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = VUDA85NREJ;
+				DEVELOPMENT_TEAM = 648N73SCMH;
 				INFOPLIST_FILE = StudyWeiBo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -758,7 +758,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = VUDA85NREJ;
+				DEVELOPMENT_TEAM = 648N73SCMH;
 				INFOPLIST_FILE = StudyWeiBo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

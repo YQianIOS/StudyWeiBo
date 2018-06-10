@@ -45,6 +45,9 @@ class YQHomeBasicTableViewCell: UITableViewCell {
     
     @IBOutlet weak var contentLabel: UILabel!
     
+    @IBOutlet weak var bottomView: UIView!
+    
+    
     weak var delegate: YQHomeBasicTableViewCellDelegate?
     
     var homeViewModal : YQHomeViewModal? {
@@ -138,6 +141,16 @@ class YQHomeBasicTableViewCell: UITableViewCell {
         pictureCollectionView.bounces = false
         pictureCollectionView.delegate = self
         pictureCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kPictureCollectionViewCell)
+    }
+    
+    // MARK: -- 计算cell的高度
+    func calculateCellHeight(viewModal: YQHomeViewModal) -> CGFloat {
+        // 设置数据
+        homeViewModal = viewModal
+        // 更新UI
+        layoutIfNeeded()
+        
+        return bottomView.frame.maxY
     }
 
 }

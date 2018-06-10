@@ -66,7 +66,7 @@ extension YQHomeViewController {
         
         //  可以自动设置 行高
         tableView.estimatedRowHeight = 400
-        tableView.rowHeight = UITableViewAutomaticDimension
+//        tableView.rowHeight = UITableViewAutomaticDimension
         
         // 清除cell的分隔线
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
@@ -86,11 +86,6 @@ extension YQHomeViewController {
         
         //  请求数据
         loadData()
-    }
-    
-    @objc private func refreshMethod() {
-        YQLog("")
-//        refreshControl?.endRefreshing()
     }
     
     @objc fileprivate func loadData() {
@@ -202,11 +197,22 @@ extension YQHomeViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let homeVM = homeListVM.statusArr[indexPath.item]
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: kHomeTableViewCell) as! YQHomeTableViewCell
+        let height = cell.calculateCellHeight(viewModal: homeVM)
+        YQLog(height)
+        return height
+    }
+    
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if scrollView.contentOffset.y < -60 {
             refresh.isBeginRefresh = true
         }
     }
+    
 
 }
 
