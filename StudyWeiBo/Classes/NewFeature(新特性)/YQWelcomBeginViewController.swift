@@ -13,9 +13,7 @@ class YQWelcomBeginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
 
 }
 
@@ -87,7 +85,7 @@ class YQWelcomCollectionViewCell : UICollectionViewCell {
         }
         
         startButton.snp.makeConstraints { (make) in
-            make.centerX.equalTo(contentView)
+            make.center.equalTo(contentView)
             make.bottom.equalTo(contentView).offset(-60)
         }
         

@@ -112,23 +112,27 @@ class PictureCollectionViewCell: UICollectionViewCell {
     
     var imageUrl: URL? {
         didSet {
-            imageView.sd_setImage(with: imageUrl) { [weak self] (image, error, _, _) in
+            guard let url = imageUrl else {
+                return
+            }
+           
+            imageView.sd_setImage(with: url) { [weak self] (image, error, _, _) in
 //                self!.imageView.sizeToFit()
                 
-                let imageSize = image?.size ?? CGSize.zero
+                guard let picture = image else {
+                    return
+                }
+                let imageSize = picture.size
                 let scale = imageSize.height / imageSize.width
                 let height = scale * kScreenW
                 self!.imageView.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: kScreenW, height: height))
                 
-                let offset = (kScreenH - height ) * 0.5
-                
                 if height < kScreenH {
+                    let offset = (kScreenH - height ) * 0.5
                     self!.scrollView.contentInset = UIEdgeInsets(top: offset, left: 0, bottom: offset, right: 0)
                 } else {
                     self!.scrollView.contentSize = CGSize(width: kScreenW, height: height)
                 }
-                
-                
             }
         }
     }
@@ -161,5 +165,6 @@ class PictureFlowLayout: UICollectionViewFlowLayout {
         scrollDirection = UICollectionViewScrollDirection.horizontal
         
         collectionView?.showsHorizontalScrollIndicator = false
+        collectionView?.isPagingEnabled = true
     }
 }
