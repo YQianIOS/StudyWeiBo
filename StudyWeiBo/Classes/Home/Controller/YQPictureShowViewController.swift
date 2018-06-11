@@ -116,9 +116,10 @@ class PictureCollectionViewCell: UICollectionViewCell {
                 return
             }
            
+            // 重置scrollView的偏移
+            resetScrollerAttribute()
+            
             imageView.sd_setImage(with: url) { [weak self] (image, error, _, _) in
-//                self!.imageView.sizeToFit()
-                
                 guard let picture = image else {
                     return
                 }
@@ -139,10 +140,13 @@ class PictureCollectionViewCell: UICollectionViewCell {
     
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView(frame: UIScreen.main.bounds)
+        scrollView.maximumZoomScale = 2
+        scrollView.minimumZoomScale = 0.5
+        scrollView.delegate = self
         return scrollView
     }()
     
-    private lazy var imageView: UIImageView = UIImageView()
+    fileprivate lazy var imageView: UIImageView = UIImageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -153,6 +157,28 @@ class PictureCollectionViewCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func resetScrollerAttribute() {
+        scrollView.contentInset = UIEdgeInsets.zero
+        scrollView.contentSize = CGSize.zero
+        scrollView.contentOffset = CGPoint.zero
+        
+        imageView.transform = CGAffineTransform.identity
+    }
+}
+
+extension PictureCollectionViewCell: UIScrollViewDelegate {
+    // 返回需要缩放的控件
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+        
+        let offsetX = (kScreenW - imageView.frame.width) * 0.5 < 0 ? 0 : (kScreenW - imageView.frame.width) * 0.5
+        let offsetY = (kScreenH - imageView.frame.height) * 0.5 < 0 ? 0 : (kScreenH - imageView.frame.height) * 0.5
+        
+        scrollView.contentInset = UIEdgeInsets(top: offsetY, left: offsetX, bottom: offsetY, right: offsetX)
     }
 }
 

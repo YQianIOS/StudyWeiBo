@@ -19,7 +19,9 @@ class YQHomeListViewModal: NSObject {
         var max_id = "0"
         if isLastData {
             sinde_id = "0"
-            max_id = statusArr.last?.status?.idstr ?? "0"
+            let indexStr = statusArr.last?.status?.idstr ?? "0"
+            let lastIndex = Int(indexStr) ?? 0
+            max_id = lastIndex == 0 ? "0" : "\(lastIndex - 1)"
         }
         
         // 发送网络请求
@@ -75,6 +77,7 @@ class YQHomeListViewModal: NSObject {
         }
         
         group.notify(queue: DispatchQueue.main) {
+            
             finishCallBack(statusModals.count)
         }
         

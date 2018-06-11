@@ -85,7 +85,7 @@ class YQWelcomCollectionViewCell : UICollectionViewCell {
         }
         
         startButton.snp.makeConstraints { (make) in
-            make.center.equalTo(contentView)
+            make.centerX.equalTo(contentView)
             make.bottom.equalTo(contentView).offset(-60)
         }
         

@@ -23,8 +23,6 @@ class YQHomeViewController: YQBaseTableViewController {
         return titleLabel
     }()
     
-    var isLastData: Bool = false
-    
     fileprivate lazy var homeListVM: YQHomeListViewModal = YQHomeListViewModal()
     
     fileprivate lazy var animateManager : YQPresentationManager = YQPresentationManager()
@@ -35,6 +33,8 @@ class YQHomeViewController: YQBaseTableViewController {
         let titleBtn : YQTitleButton = YQTitleButton(frame: CGRect.zero, title: "首页", target: self, action: #selector(titleBtnClick(button:)), forState: UIControlEvents.touchUpInside)
         return titleBtn
     }()
+    
+    fileprivate lazy var cacheCellHeight =  [String: CGFloat]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,24 +78,24 @@ extension YQHomeViewController {
         /// 添加下拉刷新
         refreshControl = refresh
         
-        refreshControl?.addTarget(self, action: #selector(loadData), for: UIControlEvents.valueChanged)
+        refreshControl?.addTarget(self, action: #selector(loadData(_:)), for: UIControlEvents.valueChanged)
         refreshControl?.beginRefreshing()
     
         //  要给它设置一个背景颜色   自定义的刷新View 才会跟着下来
 //        refreshControl?.backgroundColor = UIColor.white
         
         //  请求数据
-        loadData()
+        loadData(false)
     }
     
-    @objc fileprivate func loadData() {
+    @objc fileprivate func loadData(_ isLastData: Bool) {
                 
         homeListVM.loadDealData(isLastData)  { (count) in
             // 结束下拉刷新
             self.refreshControl?.endRefreshing()
             
             //  弹出提示Label
-            if self.isLastData {
+            if !isLastData {
                 self.showRefreshStatus(count)
             }
             
@@ -112,7 +112,7 @@ extension YQHomeViewController {
      
         self.remindLabel.isHidden = false
         
-        if remindLabel.transform.ty == 0 {
+        if remindLabel.transform.ty != 0 {
             return
         }
         
@@ -188,10 +188,7 @@ extension YQHomeViewController {
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         
         if indexPath.row == homeListVM.statusArr.count - 1  {
-            isLastData = true
-            loadData()            
-        } else {
-            isLastData = false
+            loadData(true)
         }
         return cell
         
@@ -200,19 +197,17 @@ extension YQHomeViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let homeVM = homeListVM.statusArr[indexPath.item]
         
+        // 从缓存中获取行高
+        guard let height = cacheCellHeight[homeVM.status?.idstr ?? "-1"] else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: kHomeTableViewCell) as! YQHomeTableViewCell
+            let tempHeight = cell.calculateCellHeight(viewModal: homeVM)
+            //  缓存行高
+            cacheCellHeight[homeVM.status?.idstr ?? "-1"] = tempHeight
+            return tempHeight
+        }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: kHomeTableViewCell) as! YQHomeTableViewCell
-        let height = cell.calculateCellHeight(viewModal: homeVM)
-        YQLog(height)
         return height
     }
-    
-    override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if scrollView.contentOffset.y < -60 {
-            refresh.isBeginRefresh = true
-        }
-    }
-    
 
 }
 

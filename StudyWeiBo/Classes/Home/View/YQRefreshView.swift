@@ -15,12 +15,6 @@ class YQRefreshControl: UIRefreshControl {
     
     lazy var isAnimate: Bool = false;
     
-    var isBeginRefresh: Bool = false {
-        didSet {
-            YQLog("isBeginRefresh: \(isBeginRefresh)")
-        }
-    }
-    
     private var rotationFlag : Bool = false
     
     override init() {
