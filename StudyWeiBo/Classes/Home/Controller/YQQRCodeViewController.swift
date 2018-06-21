@@ -34,7 +34,7 @@ class YQQRCodeViewController: UIViewController {
     // MARK: -- 二维码扫描设置 -- 懒加载
         //  输入对象
     fileprivate lazy var inputCapture : AVCaptureDeviceInput? = {
-        let device : AVCaptureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        let device: AVCaptureDevice = AVCaptureDevice.default(for: AVMediaType.video)!
         return try? AVCaptureDeviceInput(device: device)
     }()
     
@@ -128,7 +128,7 @@ extension YQQRCodeViewController : UINavigationControllerDelegate, UIImagePicker
 // MARK: -- 添加扫描功能
 extension YQQRCodeViewController {
     fileprivate func addQrCode() {
-        guard session.canAddInput(inputCapture) else {
+        guard session.canAddInput(inputCapture!) else {
             YQLog("添加输入对象失败")
             return
         }
@@ -138,7 +138,7 @@ extension YQQRCodeViewController {
             return
         }
         
-        session.addInput(inputCapture)
+        session.addInput(inputCapture!)
         session.addOutput(outCapture)
         
         //  设置输出能够解析的数据类型

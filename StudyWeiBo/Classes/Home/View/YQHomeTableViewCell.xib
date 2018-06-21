@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="KGk-i7-Jjw" customClass="YQHomeTableViewCell" customModule="StudyWeiBo" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="KGk-i7-Jjw" customClass="YQHomeBasicTableViewCell" customModule="StudyWeiBo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="508" height="300"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -106,22 +106,23 @@
                             <constraint firstItem="boq-hA-kZJ" firstAttribute="height" secondItem="sCg-7M-xIS" secondAttribute="height" id="tdY-ZW-Wtc"/>
                         </constraints>
                     </view>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8dJ-Me-aLF">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8dJ-Me-aLF" customClass="YQPictureCollectionView" customModule="StudyWeiBo" customModuleProvider="target">
                         <rect key="frame" x="10" y="155.5" width="290" height="90"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="290" id="OgV-2J-5Ai"/>
-                            <constraint firstAttribute="height" constant="90" id="T7O-w7-xv6"/>
+                            <constraint firstAttribute="height" constant="90" id="EcC-7s-7Pg"/>
+                            <constraint firstAttribute="width" constant="290" id="OKR-I9-G2G"/>
                         </constraints>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gGh-fj-pJr" customClass="HomePictureFlowLayout" customModule="StudyWeiBo" customModuleProvider="target">
-                            <size key="itemSize" width="50" height="50"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gGh-fj-pJr">
+                            <size key="itemSize" width="90" height="90"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <connections>
-                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="u6t-Iu-qqQ"/>
-                            <outlet property="delegate" destination="KGk-i7-Jjw" id="urU-mp-7nU"/>
+                            <outlet property="collectionViewHeightConstraint" destination="EcC-7s-7Pg" id="U8I-5k-tQ1"/>
+                            <outlet property="collectionViewWidthConstraint" destination="OKR-I9-G2G" id="RfN-eB-Ffj"/>
+                            <outlet property="pictureFlowLayout" destination="gGh-fj-pJr" id="Ng8-tg-y1a"/>
                         </connections>
                     </collectionView>
                 </subviews>
@@ -132,11 +133,11 @@
                     <constraint firstItem="phY-6b-56u" firstAttribute="leading" secondItem="6vN-ny-v6O" secondAttribute="trailing" constant="10" id="B4R-UD-qrM"/>
                     <constraint firstItem="qYK-3Q-sg6" firstAttribute="top" secondItem="naQ-kF-Bg1" secondAttribute="top" id="Dpc-Wa-bdk"/>
                     <constraint firstItem="qYK-3Q-sg6" firstAttribute="leading" secondItem="naQ-kF-Bg1" secondAttribute="trailing" constant="10" id="EPO-eS-IZ3"/>
+                    <constraint firstAttribute="bottom" secondItem="xpc-Wi-CZU" secondAttribute="bottom" id="EdW-ks-xEI"/>
                     <constraint firstItem="6vN-ny-v6O" firstAttribute="leading" secondItem="naQ-kF-Bg1" secondAttribute="leading" id="QdQ-HE-XdF"/>
                     <constraint firstAttribute="trailing" secondItem="xpc-Wi-CZU" secondAttribute="trailing" id="WKb-8y-m9o"/>
                     <constraint firstItem="xpc-Wi-CZU" firstAttribute="top" secondItem="8dJ-Me-aLF" secondAttribute="bottom" constant="10" id="WbB-K8-hus"/>
                     <constraint firstItem="naQ-kF-Bg1" firstAttribute="top" secondItem="LIf-0U-EXr" secondAttribute="top" constant="10" id="Zwa-7Q-VOS"/>
-                    <constraint firstAttribute="bottom" secondItem="xpc-Wi-CZU" secondAttribute="bottom" id="cWW-4l-hqI"/>
                     <constraint firstItem="3od-9P-1pt" firstAttribute="trailing" secondItem="LIf-0U-EXr" secondAttribute="trailing" id="dCd-3p-laa"/>
                     <constraint firstItem="naQ-kF-Bg1" firstAttribute="leading" secondItem="LIf-0U-EXr" secondAttribute="trailing" constant="10" id="i11-2v-2hs"/>
                     <constraint firstItem="LIf-0U-EXr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jrs-y9-aQ5"/>
@@ -150,12 +151,10 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="bottomView" destination="xpc-Wi-CZU" id="5AK-fR-Juy"/>
-                <outlet property="collectionViewHeightConstraint" destination="OgV-2J-5Ai" id="roT-uD-7IZ"/>
-                <outlet property="collectionViewWidthConstraint" destination="T7O-w7-xv6" id="1g0-j8-kSS"/>
                 <outlet property="contentLabel" destination="WZO-v7-BTy" id="vtu-AS-h6T"/>
                 <outlet property="iconImageView" destination="LIf-0U-EXr" id="uW1-qn-OVi"/>
                 <outlet property="nameLabel" destination="naQ-kF-Bg1" id="LYv-6n-lbx"/>
-                <outlet property="pictureCollectionView" destination="8dJ-Me-aLF" id="IiY-bk-DOC"/>
+                <outlet property="pictureCollectionView" destination="8dJ-Me-aLF" id="ZFb-a5-8GC"/>
                 <outlet property="sourceLabel" destination="phY-6b-56u" id="qug-Yv-5Zt"/>
                 <outlet property="timeLabel" destination="6vN-ny-v6O" id="GM8-B6-sKQ"/>
                 <outlet property="verifiedImageView" destination="3od-9P-1pt" id="XHl-qs-m4M"/>

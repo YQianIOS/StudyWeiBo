@@ -11,22 +11,22 @@ import UIKit
 class YQStatusModal: NSObject {
     
     /// 微博创建时间
-    var created_at: String?
+    @objc var created_at: String?
     
     /// 字符串型的微博ID
-    var idstr: String?
+    @objc var idstr: String?
     
     /// 微博信息内容
-    var text: String?
+    @objc var text: String?
     
-     /**微博来源*/
-    var source: String?
+    /**微博来源*/
+    @objc var source: String?
     
     /// 微博作者的用户信息
-    var user: YQUserModal?
+    @objc var user: YQUserModal?
     
     /// 配图数组
-    var pic_urls: [[String: AnyObject]]?
+    @objc var pic_urls: [[String: AnyObject]]?
     
     
     init(dict: [String: AnyObject]) {

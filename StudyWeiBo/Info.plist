@@ -27,6 +27,8 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>微博想访问你的摄像头</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>允许我保存图片到相册呗</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>允许我打开你的相册呗</string>
 	<key>UIRequiredDeviceCapabilities</key>

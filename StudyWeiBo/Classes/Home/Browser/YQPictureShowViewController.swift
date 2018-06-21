@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 private let collectionViewCell: String = "pictureCell"
 
@@ -85,8 +86,25 @@ class YQPictureShowViewController: UIViewController {
 // MARK: -- 内部控制方法
 extension YQPictureShowViewController {
     @objc func saveButtonClick() {
-        
+        // 拿到需要保存的图片
+        guard let indexPath = collectionView.indexPathsForVisibleItems.last, let collectionViewCell = collectionView.cellForItem(at: indexPath) as? PictureCollectionViewCell else {
+            YQLog("获取YQPictureCollectionViewCell失败")
+            return
+        }
+        guard let image = collectionViewCell.imageView.image else {
+            YQLog("获取图片失败")
+            return
+        }
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(image:didFinishSavingWithError:contextInfo:)), nil)
     }
+    @objc func image(image: UIImage, didFinishSavingWithError: NSError?, contextInfo: AnyObject ) {
+        if didFinishSavingWithError != nil {
+            SVProgressHUD.showError(withStatus: "图片保存失败")
+            return
+        }
+        SVProgressHUD.showSuccess(withStatus: "图片保存成功")
+    }
+
     @objc func closeButtonClick() {
         dismiss(animated: true, completion: nil)
     }

@@ -27,6 +27,11 @@ class YQHomeViewController: YQBaseTableViewController {
     
     fileprivate lazy var animateManager : YQPresentationManager = YQPresentationManager()
     
+    fileprivate lazy var pictureManager: YQPicturePresentationManager = {
+        let manager: YQPicturePresentationManager = YQPicturePresentationManager()
+        return manager
+    }()
+    
     fileprivate lazy var refresh: YQRefreshControl = YQRefreshControl()
     
     fileprivate lazy var titleBtn : YQTitleButton = { [weak self] in
@@ -52,6 +57,12 @@ class YQHomeViewController: YQBaseTableViewController {
     //  析构函数
     deinit {
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        //  释放缓存的高度数据
+        cacheCellHeight.removeAll()
     }
 }
 
@@ -179,10 +190,10 @@ extension YQHomeViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: kHomeTableViewCell) as! YQHomeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: kHomeTableViewCell) as! YQHomeBasicTableViewCell
         
         cell.homeViewModal = homeListVM.statusArr[indexPath.item]
-        cell.delegate = self
+        cell.pictureCollectionView.pictureDelegate = self
         
         // 取消cell的选中状态
         cell.selectionStyle = UITableViewCellSelectionStyle.none
@@ -199,21 +210,28 @@ extension YQHomeViewController {
         
         // 从缓存中获取行高
         guard let height = cacheCellHeight[homeVM.status?.idstr ?? "-1"] else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: kHomeTableViewCell) as! YQHomeTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: kHomeTableViewCell) as! YQHomeBasicTableViewCell
             let tempHeight = cell.calculateCellHeight(viewModal: homeVM)
             //  缓存行高
             cacheCellHeight[homeVM.status?.idstr ?? "-1"] = tempHeight
             return tempHeight
         }
-        
         return height
     }
 
 }
 
-extension YQHomeViewController: YQHomeBasicTableViewCellDelegate {
-    func homeBasicTableViewCell(_ view: YQHomeBasicTableViewCell, pictureUrl: [URL]?, indexPath: IndexPath) {
+extension YQHomeViewController: YQPictureCollectionViewDelegate {
+    func homeBasicTableViewCell(_ view: YQPictureCollectionView, pictureUrl: [URL]?, indexPath: IndexPath) {
         let pictureShowVC = YQPictureShowViewController(bmiddle_pic: pictureUrl, indexPath: indexPath)
+        
+        //  设置转场代理
+        pictureShowVC.transitioningDelegate = pictureManager
+        //  设置转场动画样式 (自定义)
+        pictureShowVC.modalPresentationStyle = UIModalPresentationStyle.custom
+        
+        pictureManager.setDelegateData(delegate: view, indexPath: indexPath)
+        
         present(pictureShowVC, animated: true, completion: nil)
     }
 }

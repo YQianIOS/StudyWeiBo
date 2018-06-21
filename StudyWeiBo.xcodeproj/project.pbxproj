@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B30E40CC20CFB01500F8CFD2 /* YQPicturePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30E40CB20CFB01500F8CFD2 /* YQPicturePresentationManager.swift */; };
+		B32D1DC420D9FA47008146BB /* YQProgressImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D1DC320D9FA47008146BB /* YQProgressImageView.swift */; };
+		B32D1DC620D9FC02008146BB /* YQProgressShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D1DC520D9FC02008146BB /* YQProgressShowView.swift */; };
+		B32D1DC820DA31D7008146BB /* YQPictureCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D1DC720DA31D7008146BB /* YQPictureCollectionView.swift */; };
 		B33346681FB99D9700BD5739 /* YQMyQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33346671FB99D9700BD5739 /* YQMyQRCodeViewController.swift */; };
 		B333466C1FBAC38D00BD5739 /* YQOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333466A1FBAC38D00BD5739 /* YQOAuthViewController.swift */; };
 		B333466D1FBAC38D00BD5739 /* YQOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B333466B1FBAC38D00BD5739 /* YQOAuthViewController.xib */; };
@@ -37,7 +41,6 @@
 		B385072F1FE21DB600B624BC /* YQRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B385072E1FE21DB600B624BC /* YQRefreshView.swift */; };
 		B392439A20CA72680069E156 /* YQHomeListViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392439920CA72680069E156 /* YQHomeListViewModal.swift */; };
 		B392439E20CBA3C70069E156 /* YQPictureShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392439D20CBA3C70069E156 /* YQPictureShowViewController.swift */; };
-		B3B020651FE8B0CD00853E76 /* YQBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B020641FE8B0CD00853E76 /* YQBrowserViewController.swift */; };
 		B3B811E81FA96CDD006F9057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B811E71FA96CDD006F9057 /* AppDelegate.swift */; };
 		B3B811EF1FA96CDD006F9057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B811EE1FA96CDD006F9057 /* Assets.xcassets */; };
 		B3B811F21FA96CDD006F9057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3B811F01FA96CDD006F9057 /* LaunchScreen.storyboard */; };
@@ -66,6 +69,10 @@
 /* Begin PBXFileReference section */
 		6A01DF1FE032FB07D849023A /* Pods_StudyWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9611C755CBD9E40CA15B41C2 /* Pods-StudyWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyWeiBo/Pods-StudyWeiBo.release.xcconfig"; sourceTree = "<group>"; };
+		B30E40CB20CFB01500F8CFD2 /* YQPicturePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQPicturePresentationManager.swift; sourceTree = "<group>"; };
+		B32D1DC320D9FA47008146BB /* YQProgressImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQProgressImageView.swift; sourceTree = "<group>"; };
+		B32D1DC520D9FC02008146BB /* YQProgressShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQProgressShowView.swift; sourceTree = "<group>"; };
+		B32D1DC720DA31D7008146BB /* YQPictureCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQPictureCollectionView.swift; sourceTree = "<group>"; };
 		B33346671FB99D9700BD5739 /* YQMyQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQMyQRCodeViewController.swift; sourceTree = "<group>"; };
 		B333466A1FBAC38D00BD5739 /* YQOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQOAuthViewController.swift; sourceTree = "<group>"; };
 		B333466B1FBAC38D00BD5739 /* YQOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQOAuthViewController.xib; sourceTree = "<group>"; };
@@ -96,7 +103,6 @@
 		B385072E1FE21DB600B624BC /* YQRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQRefreshView.swift; sourceTree = "<group>"; };
 		B392439920CA72680069E156 /* YQHomeListViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQHomeListViewModal.swift; sourceTree = "<group>"; };
 		B392439D20CBA3C70069E156 /* YQPictureShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQPictureShowViewController.swift; sourceTree = "<group>"; };
-		B3B020641FE8B0CD00853E76 /* YQBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQBrowserViewController.swift; sourceTree = "<group>"; };
 		B3B811E41FA96CDD006F9057 /* StudyWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B811E71FA96CDD006F9057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3B811EE1FA96CDD006F9057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +148,15 @@
 				6A01DF1FE032FB07D849023A /* Pods_StudyWeiBo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B32D1DC220D9F9BD008146BB /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				B32D1DC320D9FA47008146BB /* YQProgressImageView.swift */,
+				B32D1DC520D9FC02008146BB /* YQProgressShowView.swift */,
+			);
+			path = ProgressView;
 			sourceTree = "<group>";
 		};
 		B33346691FBABD2100BD5739 /* OAuth授权 */ = {
@@ -196,7 +211,8 @@
 		B3B020631FE8B09E00853E76 /* Browser */ = {
 			isa = PBXGroup;
 			children = (
-				B3B020641FE8B0CD00853E76 /* YQBrowserViewController.swift */,
+				B392439D20CBA3C70069E156 /* YQPictureShowViewController.swift */,
+				B30E40CB20CFB01500F8CFD2 /* YQPicturePresentationManager.swift */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -258,6 +274,7 @@
 		B3B812181FAAF00D006F9057 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B32D1DC220D9F9BD008146BB /* ProgressView */,
 				B3EA1CB81FB1526000743A78 /* externtion */,
 				B3B812351FAB04A3006F9057 /* Const.swift */,
 				B3B812391FAB3C71006F9057 /* NSLog.swift */,
@@ -317,7 +334,6 @@
 				B3EA1CA61FB064E900743A78 /* YQHomeViewController.xib */,
 				B37B41CE1FB4452000C03A9C /* YQPopoverViewController.swift */,
 				B37B41CF1FB4452000C03A9C /* YQPopoverViewController.xib */,
-				B392439D20CBA3C70069E156 /* YQPictureShowViewController.swift */,
 				B37B41D61FB480F100C03A9C /* PopoverManager */,
 				B37B41D71FB557DD00C03A9C /* QRCode */,
 			);
@@ -338,8 +354,9 @@
 			children = (
 				B3EA1CBB1FB15CE200743A78 /* YQTitleButton.swift */,
 				B38507291FE1062C00B624BC /* YQHomeBasicTableViewCell.swift */,
-				B34116D51FCD40B100A3D9A0 /* YQHomeTableViewCell.swift */,
 				B34116D61FCD40B100A3D9A0 /* YQHomeTableViewCell.xib */,
+				B32D1DC720DA31D7008146BB /* YQPictureCollectionView.swift */,
+				B34116D51FCD40B100A3D9A0 /* YQHomeTableViewCell.swift */,
 				B38507251FE105DE00B624BC /* YQForwardingTableViewCell.swift */,
 				B38507261FE105DE00B624BC /* YQForwardingTableViewCell.xib */,
 				B385072E1FE21DB600B624BC /* YQRefreshView.swift */,
@@ -485,6 +502,7 @@
 					B3B811E31FA96CDD006F9057 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 648N73SCMH;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -610,17 +628,20 @@
 				B3EA1CA01FB0029600743A78 /* YQProfileTableViewController.swift in Sources */,
 				B37B41D01FB4452000C03A9C /* YQPopoverViewController.swift in Sources */,
 				B392439A20CA72680069E156 /* YQHomeListViewModal.swift in Sources */,
+				B30E40CC20CFB01500F8CFD2 /* YQPicturePresentationManager.swift in Sources */,
 				B3EA1CBA1FB1529A00743A78 /* YQUIBarButtonItem-extension.swift in Sources */,
 				B3B8121A1FAAF3DC006F9057 /* MainViewController.swift in Sources */,
 				B3EA1C881FAFFEF700743A78 /* YQNullTextViewController.swift in Sources */,
 				B37B41DB1FB5794400C03A9C /* YQQRCodeViewController.swift in Sources */,
 				B34116DD1FD1067700A3D9A0 /* YQHomeViewModal.swift in Sources */,
 				B38507271FE105DE00B624BC /* YQForwardingTableViewCell.swift in Sources */,
-				B3B020651FE8B0CD00853E76 /* YQBrowserViewController.swift in Sources */,
 				B33346681FB99D9700BD5739 /* YQMyQRCodeViewController.swift in Sources */,
 				B33346791FBD2DB500BD5739 /* YQNewFeatureViewController.swift in Sources */,
+				B32D1DC420D9FA47008146BB /* YQProgressImageView.swift in Sources */,
+				B32D1DC620D9FC02008146BB /* YQProgressShowView.swift in Sources */,
 				B3B812361FAB04A3006F9057 /* Const.swift in Sources */,
 				B392439E20CBA3C70069E156 /* YQPictureShowViewController.swift in Sources */,
+				B32D1DC820DA31D7008146BB /* YQPictureCollectionView.swift in Sources */,
 				B3EA1C9E1FB0029600743A78 /* YQHomeViewController.swift in Sources */,
 				B3EA1CB51FB06B2B00743A78 /* YQBaseView.swift in Sources */,
 			);
@@ -748,7 +769,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yizhiton.StudyWeiBo;
 				PRODUCT_NAME = StudyWeiBo;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG ";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -764,7 +786,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yizhiton.StudyWeiBo;
 				PRODUCT_NAME = StudyWeiBo;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
