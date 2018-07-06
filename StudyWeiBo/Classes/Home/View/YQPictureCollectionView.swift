@@ -152,6 +152,12 @@ class YQPictureCollectionViewCell: UICollectionViewCell {
     var url: URL? {
         didSet {
             imageView.sd_setImage(with: url)
+            
+            //  gif 图标的显隐
+            if  let flag = url?.absoluteString.lowercased().hasSuffix("gif") {
+                gifImageView.isHidden = !flag
+            }
+
         }
     }
     
@@ -162,9 +168,21 @@ class YQPictureCollectionViewCell: UICollectionViewCell {
         return pictureImageView
     }()
     
+    lazy var gifImageView: UIImageView = {
+        let gifImageView: UIImageView = UIImageView(image: UIImage(named: "gif"))
+        gifImageView.sizeToFit()
+        return gifImageView
+    }()
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         addSubview(imageView)
+        addSubview(gifImageView)
+        
+        gifImageView.translatesAutoresizingMaskIntoConstraints = false
+        var constrait = NSLayoutConstraint.constraints(withVisualFormat: "H:[gifImageView]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["gifImageView": gifImageView])
+        constrait += NSLayoutConstraint.constraints(withVisualFormat: "V:[gifImageView]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["gifImageView": gifImageView])
+        addConstraints(constrait)
     }
 }
 

@@ -47,6 +47,7 @@
 		B3B8121A1FAAF3DC006F9057 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B812191FAAF3DC006F9057 /* MainViewController.swift */; };
 		B3B812361FAB04A3006F9057 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B812351FAB04A3006F9057 /* Const.swift */; };
 		B3B8123A1FAB3C71006F9057 /* NSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B812391FAB3C71006F9057 /* NSLog.swift */; };
+		B3C68B3A20EF6CFF008813A3 /* YQComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C68B3920EF6CFE008813A3 /* YQComposeViewController.swift */; };
 		B3EA1C881FAFFEF700743A78 /* YQNullTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1C871FAFFEF700743A78 /* YQNullTextViewController.swift */; };
 		B3EA1C9D1FB0029600743A78 /* YQDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1C8B1FB0029600743A78 /* YQDiscoverViewController.swift */; };
 		B3EA1C9E1FB0029600743A78 /* YQHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EA1C901FB0029600743A78 /* YQHomeViewController.swift */; };
@@ -111,6 +112,7 @@
 		B3B812191FAAF3DC006F9057 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B3B812351FAB04A3006F9057 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		B3B812391FAB3C71006F9057 /* NSLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLog.swift; sourceTree = "<group>"; };
+		B3C68B3920EF6CFE008813A3 /* YQComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQComposeViewController.swift; sourceTree = "<group>"; };
 		B3EA1C871FAFFEF700743A78 /* YQNullTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YQNullTextViewController.swift; path = ../YQNullTextViewController.swift; sourceTree = "<group>"; };
 		B3EA1C8B1FB0029600743A78 /* YQDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDiscoverViewController.swift; sourceTree = "<group>"; };
 		B3EA1C901FB0029600743A78 /* YQHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQHomeViewController.swift; sourceTree = "<group>"; };
@@ -283,6 +285,14 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		B3C68B3820EF6CCD008813A3 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				B3C68B3920EF6CFE008813A3 /* YQComposeViewController.swift */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
 		B3EA1C891FB0029600743A78 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +328,7 @@
 		B3EA1C8E1FB0029600743A78 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B3C68B3820EF6CCD008813A3 /* Compose */,
 				B3B020631FE8B09E00853E76 /* Browser */,
 				B3EA1C8F1FB0029600743A78 /* Controller */,
 				B3EA1C911FB0029600743A78 /* Modal */,
@@ -642,6 +653,7 @@
 				B3B812361FAB04A3006F9057 /* Const.swift in Sources */,
 				B392439E20CBA3C70069E156 /* YQPictureShowViewController.swift in Sources */,
 				B32D1DC820DA31D7008146BB /* YQPictureCollectionView.swift in Sources */,
+				B3C68B3A20EF6CFF008813A3 /* YQComposeViewController.swift in Sources */,
 				B3EA1C9E1FB0029600743A78 /* YQHomeViewController.swift in Sources */,
 				B3EA1CB51FB06B2B00743A78 /* YQBaseView.swift in Sources */,
 			);

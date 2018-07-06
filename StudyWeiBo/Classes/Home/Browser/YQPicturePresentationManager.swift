@@ -92,7 +92,7 @@ extension YQPicturePresentationManager: UIViewControllerAnimatedTransitioning {
         imageView.frame = rect
         transitionContext.containerView.addSubview(imageView)
         
-        UIView.animate(withDuration: 2.0, animations: {
+        UIView.animate(withDuration: 1.0, animations: {
             imageView.frame = toFrame
         }) { (_) in
             imageView.removeFromSuperview()
@@ -135,7 +135,7 @@ extension YQPicturePresentationManager: UIViewControllerAnimatedTransitioning {
         fromView.removeFromSuperview()
         transitionContext.containerView.addSubview(imageView)
         imageView.frame = rect
-        UIView.animate(withDuration: 2.0, animations: {
+        UIView.animate(withDuration: 1.0, animations: {
             imageView.frame = toFrame
         }) { (_) in
             imageView.removeFromSuperview()
